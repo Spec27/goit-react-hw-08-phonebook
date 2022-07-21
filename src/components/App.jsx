@@ -7,6 +7,9 @@ function App() {
   return (
     <>
       <div className={s.Container}>
+        <div className={s.HeaderContainer}>
+          <h1 className={s.TitlePhone}>&#128241;</h1>
+        </div>
         <h1 className={s.Title}>Phonebook</h1>
         <Form />
         <h2 className={s.Title}>Contacts</h2>
