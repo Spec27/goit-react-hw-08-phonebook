@@ -1,20 +1,28 @@
-import Form from './Form';
-import ContactList from './ContactList';
-import Filter from './Filter';
 import s from './App.module.css';
+import { lazy, Suspense } from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AppBar from './AppBar';
+
+const Register = lazy(() => import('./viev/Register'));
+const Login = lazy(() => import('./viev/Login'));
+const Contacts = lazy(() => import('./viev/Contacts'));
 
 function App() {
   return (
     <>
       <div className={s.Container}>
-        <div className={s.HeaderContainer}>
-          <h1 className={s.TitlePhone}>&#128241;</h1>
-        </div>
-        <h1 className={s.Title}>Phonebook</h1>
-        <Form />
-        <h2 className={s.Title}>Contacts</h2>
-        <Filter />
-        <ContactList />
+        <Suspense fallback={<p>...Loader</p>}>
+          <AppBar />
+          <Routes>
+            <Route path="/" element={<Register />} />
+          </Routes>
+          <Routes>
+            <Route path="login" element={<Login />} />
+          </Routes>
+          <Routes>
+            <Route path="contacts" element={<Contacts />} />
+          </Routes>
+        </Suspense>
       </div>
     </>
   );
