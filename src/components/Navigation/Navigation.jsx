@@ -6,23 +6,25 @@ const setActive = ({ isActive }) => (isActive ? s.ActiveLink : s.Link);
 const Navigation = () => {
   return (
     <>
-      <header>
+      <header className={s.H}>
         <nav className={s.HeaderContainer}>
-          <h1 className={s.TitlePhone}>&#128241;</h1>
-          <div className={s.RegisterContainer}>
-            <NavLink className={setActive} to="/">
-              Register
-            </NavLink>
-          </div>
-          <div className={s.LoginContainer}>
-            <NavLink className={setActive} to="login">
-              Login
-            </NavLink>
-          </div>
-          <div className={s.ContactsContainer}>
-            <NavLink className={setActive} to="contacts">
-              Contacts
-            </NavLink>
+          <div className={s.H}>
+            <h1 className={s.TitlePhone}>&#128241;</h1>
+            <div className={s.RegisterContainer}>
+              <NavLink className={setActive} to="/">
+                Register
+              </NavLink>
+            </div>
+            <div className={s.LoginContainer}>
+              <NavLink className={setActive} to="login">
+                Login
+              </NavLink>
+            </div>
+            <div className={s.ContactsContainer}>
+              <NavLink className={setActive} to="contacts">
+                Contacts
+              </NavLink>
+            </div>
           </div>
         </nav>
       </header>

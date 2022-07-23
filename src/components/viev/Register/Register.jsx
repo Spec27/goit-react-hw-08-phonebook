@@ -41,7 +41,7 @@ const Register = () => {
           />
         </label>
         <button className={s.FormBtn} type="submit">
-          LOGIN
+          REGISTER
         </button>
       </form>
     </div>
