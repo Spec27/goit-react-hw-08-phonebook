@@ -7,8 +7,8 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode basenname="/goit-react-hw-08-phonebook/">
-    <BrowserRouter>
+  <React.StrictMode>
+    <BrowserRouter basenname="/goit-react-hw-08-phonebook/">
       <Provider store={store}>
         <App />
       </Provider>
