@@ -6,6 +6,7 @@ import AppBar from './AppBar';
 const Register = lazy(() => import('./viev/Register'));
 const Login = lazy(() => import('./viev/Login'));
 const Contacts = lazy(() => import('./viev/Contacts'));
+const NotFoundViev = lazy(() => import('./viev/NotFoundViev'));
 
 function App() {
   return (
@@ -15,12 +16,9 @@ function App() {
           <AppBar />
           <Routes>
             <Route path="/" element={<Register />} />
-          </Routes>
-          <Routes>
             <Route path="login" element={<Login />} />
-          </Routes>
-          <Routes>
             <Route path="contacts" element={<Contacts />} />
+            <Route path="*" element={<NotFoundViev />} />
           </Routes>
         </Suspense>
       </div>
