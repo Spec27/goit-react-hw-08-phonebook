@@ -40,7 +40,8 @@ function Form() {
       return;
     }
 
-    createContacts({ name, phone: number });
+    createContacts({ name, number });
+    console.log(number);
     setName('');
     setNumber('');
   };

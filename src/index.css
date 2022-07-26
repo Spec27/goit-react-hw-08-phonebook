@@ -7,9 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  min-width: 1920px;
-  height:auto;
-  background-image: url("../src/img/wallpaperbetter.jpg");
+  background-image: linear-gradient(45deg, rgba(56, 5, 5, 0.233), rgba(2, 2, 59, 0.555)), url("../src/img/wallpaperflare.com_wallpaper.jpg");
 }
 
 code {

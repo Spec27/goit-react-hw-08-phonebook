@@ -21,11 +21,11 @@ const ContactList = () => {
     <ul className={s.List}>
       {isFetching && <Loader />}
       {contacts &&
-        filteredContacts.map(({ name, phone, id }) => (
+        filteredContacts.map(({ name, number, id }) => (
           <div key={id} className={s.ContactContainer}>
             <li key={id} className={s.ContactItem}>
               <p className={s.ContactText}>{name}</p>
-              <p className={s.ContactText}>{phone}</p>
+              <p className={s.ContactText}>{number}</p>
             </li>
             <button className={s.ContactBtn} onClick={() => deleteContact(id)}>
               Видалити
