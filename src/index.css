@@ -1,4 +1,4 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;/* bring in normalize.css styles */
 
 body {
   margin: 0;
@@ -7,7 +7,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(45deg, rgba(56, 5, 5, 0.233), rgba(2, 2, 59, 0.555)), url("../src/img/wallpaperflare.com_wallpaper.jpg");
+  background-image: linear-gradient(45deg, rgba(124, 32, 32, 0.214), rgba(0, 106, 213, 0.17)), url("../src/img/wallpaperflare.com_wallpaper.jpg");
 }
 
 code {
