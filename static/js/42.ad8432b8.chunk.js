@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[42],{9042:function(e,t,r){r.r(t),r.d(t,{default:function(){return s}});var n=r(3504),a="NotFoundViev_Text__Z42P4",c=r(184);var s=function(){return(0,c.jsxs)("h1",{className:a,children:[" ","404 \u0421\u0442\u043e\u0440\u0456\u043d\u043a\u0430 \u043d\u0435 \u0437\u043d\u0430\u0439\u0434\u0435\u043d\u0430 ",(0,c.jsx)(n.rU,{to:"/",children:"Register"})," "]})}}}]);
-//# sourceMappingURL=42.ad8432b8.chunk.js.map
