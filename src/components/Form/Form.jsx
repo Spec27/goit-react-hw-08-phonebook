@@ -4,6 +4,8 @@ import {
   useFetchContactsQuery,
 } from 'redux/contacts/contactsApi';
 import s from './Form.module.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Form() {
   const [createContacts] = useCreateContactsMutation();
@@ -36,7 +38,7 @@ function Form() {
     event.preventDefault();
 
     if (checkRepeatName(name)) {
-      alert(`Sory Bro the name ( ${name} ) is already in contacts.`);
+      toast.warning(`Sory Bro the name ( ${name} ) is already in contacts.`);
       return;
     }
 
@@ -47,35 +49,38 @@ function Form() {
   };
 
   return (
-    <form className={s.Form} onSubmit={handleSubmit}>
-      <label>
-        <input
-          className={s.Input}
-          type="text"
-          name="name"
-          pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
-          title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
-          required
-          value={name}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        <input
-          className={s.Input}
-          type="tel"
-          name="number"
-          pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
-          title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
-          required
-          value={number}
-          onChange={handleChange}
-        />
-      </label>
-      <button className={s.FormBtn} type="submit">
-        Add Contact
-      </button>
-    </form>
+    <>
+      <ToastContainer autoClose={4000} position={'top-center'} theme="dark" />
+      <form className={s.Form} onSubmit={handleSubmit}>
+        <label>
+          <input
+            className={s.Input}
+            type="text"
+            name="name"
+            pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+            title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
+            required
+            value={name}
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          <input
+            className={s.Input}
+            type="tel"
+            name="number"
+            pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+            title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
+            required
+            value={number}
+            onChange={handleChange}
+          />
+        </label>
+        <button className={s.FormBtn} type="submit">
+          Add Contact
+        </button>
+      </form>
+    </>
   );
 }
 
