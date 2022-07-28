@@ -1,10 +1,20 @@
 .Container{
    display: flex;
    min-width: 1920px;
-   min-height: 1280px;
+   min-height: 1260px;
   flex-direction: column;
    align-items: center;
+   position: sticky;
    
-   
- 
+}
+
+
+.Futer{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100vw;
+   height: 150px;
+   background-color: #000000dc;
+   box-shadow: rgb(80, 255, 255) 0px 2px 4px, rgba(177, 250, 243, 0.532) 0px 7px 13px -3px, rgba(254, 255, 255, 0.866) 0px -3px 0px inset;
 }

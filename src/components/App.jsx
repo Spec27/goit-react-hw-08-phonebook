@@ -55,6 +55,9 @@ function App() {
             </Routes>
           </Suspense>
         </div>
+        <div className={s.Futer}>
+          <div className={s.FuterContainer}></div>
+        </div>
       </>
     )
   );
