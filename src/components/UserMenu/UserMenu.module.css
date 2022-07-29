@@ -13,9 +13,20 @@
     letter-spacing: 4px;
     font-weight: 700;
     text-decoration: none;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
     color: white;
     font: Georgia, serif;
+    text-shadow: 0 1px 0 #3fdcfc,
+    0 2px 0 #5e5858,
+    0 3px 0 #363333,
+    0 4px 0 #272626,
+    0 5px 0 #070707,
+    0 6px 1px rgba(0,0,0,.2),
+    0 0 5px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,.1),
+    0 3px 5px rgba(255, 255, 255, 0.559),
+    0 5px 10px rgba(127, 232, 253, 0.2),
+    0 10px 10px rgba(167, 238, 251, 0.518),
+    0 20px 20px rgba(155, 236, 251, 0.379);
 }
 .ActiveLink{
     font-family: arial;
@@ -24,9 +35,20 @@
     letter-spacing: 4px;
     font-weight: 700;
     text-decoration: none;
-    text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;
-    color: rgb(107, 233, 255);
+    color: rgb(61, 161, 255);
     font: Georgia, serif;
+    text-shadow: 0 1px 0 #3fdcfc,
+    0 2px 0 #5e5858,
+    0 3px 0 #363333,
+    0 4px 0 #272626,
+    0 5px 0 #070707,
+    0 6px 1px rgba(0,0,0,.2),
+    0 0 5px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,.1),
+    0 3px 5px rgba(255, 255, 255, 0.559),
+    0 5px 10px rgba(127, 232, 253, 0.2),
+    0 10px 10px rgba(167, 238, 251, 0.518),
+    0 20px 20px rgba(155, 236, 251, 0.379);
 }
 .Btn{
     width: 100px;

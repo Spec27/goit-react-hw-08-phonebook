@@ -72,6 +72,12 @@
         color: rgb(121, 242, 255);
         
     }
+    .Input:focus{
+        transform: scale(1.1);
+        box-shadow: 0 6px 1px -4px rgb(189, 255, 255);
+        color: rgb(121, 242, 255);
+        
+    }
 
 
 .FormBtn{
