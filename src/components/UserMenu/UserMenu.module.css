@@ -3,7 +3,7 @@
     align-items: center;
 }
 .ContactsContainer{
-    margin-right: 1120px;
+    margin-right: 100px;
     margin-left: auto;
 }
 .Link{
@@ -59,8 +59,8 @@
     }
 
     .Title{
-    font-family: arial;
-    font-size: 16px;
+        font-family: 'Square Peg', cursive;
+    font-size: 26px;
     line-height: 1.6;
     letter-spacing: 4px;
     font-weight: 700;
@@ -69,4 +69,14 @@
     color: white;
     font: Georgia, serif;
     margin-right: 20px;
+    }
+
+
+    .Logo{
+        font-family: 'Square Peg', cursive;
+        font-size: 50px;
+        letter-spacing: 5px;
+        color: #ffffff;
+        margin-right: 800px;
+        text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(252, 252, 255), 0 0 0.2em rgb(255, 255, 255);
     }

@@ -13,6 +13,9 @@ function UserMenu() {
   return (
     <>
       <div className={s.Container}>
+        <div>
+          <h2 className={s.Logo}>My Phonebook</h2>
+        </div>
         <div className={s.ContactsContainer}>
           <NavLink className={setActive} to="/contacts">
             Contacts

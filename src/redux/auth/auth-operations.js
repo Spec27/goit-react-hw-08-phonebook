@@ -19,7 +19,15 @@ const register = createAsyncThunk('auth/register', async credentials => {
     token.set(data.token);
     toast.success(`Вітаемо Реестрація Пройшла успішно`);
     return data;
-  } catch (error) {}
+  } catch (error) {
+    if (error.response.data.name === 'MongoError') {
+      alert(`Користувач  ${credentials.name} вже зареестрований`);
+      console.log(error.response.data);
+    }
+    if (error.response.data.errors.email) {
+      alert(error.response.data.errors.email.message);
+    }
+  }
 });
 
 const logIn = createAsyncThunk('auth/logIn', async credentials => {
@@ -28,7 +36,9 @@ const logIn = createAsyncThunk('auth/logIn', async credentials => {
     token.set(data.token);
     toast.success(`Вітаемо ви Успішно Авторизувалися`);
     return data;
-  } catch (error) {}
+  } catch (error) {
+    alert(`Користувача не Знайдено`);
+  }
 });
 
 const logOut = createAsyncThunk('auth/logout', async () => {

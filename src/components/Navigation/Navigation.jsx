@@ -6,6 +6,9 @@ const setActive = ({ isActive }) => (isActive ? s.ActiveLink : s.Link);
 const Navigation = () => {
   return (
     <>
+      <div>
+        <h1 className={s.Title}>My Phonebook</h1>
+      </div>
       <div className={s.RegisterContainer}>
         <NavLink className={setActive} to="/register">
           Register
