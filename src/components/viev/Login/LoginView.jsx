@@ -23,7 +23,7 @@ const LoginViev = () => {
   const hendleSubmit = event => {
     event.preventDefault();
     dispach(authOperations.logIn({ email, password }));
-    setEmail('');
+    /*  setEmail(''); */
     setPasswort('');
   };
 
