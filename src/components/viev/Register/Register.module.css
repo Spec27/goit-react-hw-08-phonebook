@@ -18,19 +18,20 @@
 }
 .Title{
     margin-bottom: 50px;
+    letter-spacing: 8px;
     color: #ffffff;
-    text-shadow: 0 1px 0 #cac8c8,
-0 2px 0 #5e5858,
-0 3px 0 #363333,
-0 4px 0 #272626,
-0 5px 0 #070707,
-0 6px 1px rgba(0,0,0,.2),
-0 0 5px rgba(0,0,0,0.1),
-0 1px 3px rgba(0,0,0,.1),
-0 3px 5px rgba(0,0,0,.1),
-0 5px 10px rgba(0,0,0,.2),
-0 10px 10px rgba(0,0,0,.3),
-0 20px 20px rgba(0,0,0,.1);
+    text-shadow: 0 1px 0 #3fdcfc,
+    0 2px 0 #5e5858,
+    0 3px 0 #363333,
+    0 4px 0 #272626,
+    0 5px 0 #070707,
+    0 6px 1px rgba(0,0,0,.2),
+    0 0 5px rgba(0,0,0,0.1),
+    0 1px 3px rgba(0,0,0,.1),
+    0 3px 5px rgba(255, 255, 255, 0.559),
+    0 5px 10px rgba(127, 232, 253, 0.2),
+    0 10px 10px rgba(167, 238, 251, 0.518),
+    0 20px 20px rgba(155, 236, 251, 0.379);
 }
 
 .Input{
@@ -46,11 +47,12 @@
     border-right: none;
     border-bottom-width: 2px;
     border-color: #f7feff;
+    border-radius: 5px;
     outline: 0;
     background-color: inherit;
     color: aliceblue;
-    box-shadow: 0 4px 2px -2px rgb(80, 255, 255);
-    text-shadow: 0 1px 0 #cac8c8,
+    box-shadow: 0 4px 2px -2px rgb(31, 31, 31);
+    text-shadow: 0 1px 0 #ffffff,
     0 2px 0 #5e5858,
     0 3px 0 #363333,
     0 4px 0 #4b4545,
@@ -62,12 +64,20 @@
     0 5px 10px rgba(0,0,0,.2),
     0 10px 10px rgba(0,0,0,.3),
     0 20px 20px rgba(0,0,0,.1);
+    transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    .Input:hover{
+        transform: scale(1.1);
+        box-shadow: 0 6px 1px -4px rgb(189, 255, 255);
+        color: rgb(121, 242, 255);
+        
     }
 
 
 .FormBtn{
     width: 130px;
     height: 45px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
