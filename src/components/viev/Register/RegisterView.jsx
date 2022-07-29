@@ -33,6 +33,14 @@ const RegisterViev = () => {
 
   return (
     <div className={s.HeaderContainer}>
+      <div className={s.Description}>
+        <p className={s.Text}>
+          Hello, this phonebook is not created for commercial purposes! It is
+          made exclusively for home use! How did you decide to use this product,
+          please register! After registration, you will immediately go to the
+          user page!
+        </p>
+      </div>
       <form className={s.Form} onSubmit={hendleSubmit}>
         <h2 className={s.Title}>Please Register</h2>
         <label>

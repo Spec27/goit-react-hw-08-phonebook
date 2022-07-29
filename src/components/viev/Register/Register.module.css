@@ -1,3 +1,7 @@
+.HeaderContainer{
+    display: flex;
+    justify-content: center;
+}
 .Form{
     display: flex;
     flex-direction: column;
@@ -10,6 +14,7 @@
     padding-top: 40px;
     border-radius: 20px;
     box-shadow: rgb(80, 255, 255) 0px 2px 4px, rgba(177, 250, 243, 0.532) 0px 7px 13px -3px, rgba(254, 255, 255, 0.866) 0px -3px 0px inset;
+    margin-right: 500px;
 }
 .Title{
     margin-bottom: 50px;
@@ -86,4 +91,19 @@
 .FormBtn:hover{
     background-color: rgb(13, 78, 169);
     transform: scale(1.1);
+}
+
+
+.Description{
+width: 500px;
+padding-top: 30px;
+}
+
+.Text{
+    font-family: 'Square Peg', cursive;
+    font-size: 36px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    margin-right: 250px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(252, 252, 255), 0 0 0.2em rgb(12, 12, 12);
 }
